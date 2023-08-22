@@ -1,1 +1,4 @@
-print('Morjens bro')
+
+name = input('Mikä nimesi on?')
+
+print('Terve,', name,'!')
