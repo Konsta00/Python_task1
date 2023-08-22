@@ -32,11 +32,9 @@ except ValueError:
 
 print('Massa nykyisten mittojen mukaan: ')
 
-
 g = float(l) + float(n) + float(b)
-print(g, 'grammaa')
 
 kg = g // 1000
 g2 = g % 1000
 
-print(kg, 'kg', g2, 'grammaa')
+print(f"{int(kg)} kg {round(g2, 2)} grammaa")
