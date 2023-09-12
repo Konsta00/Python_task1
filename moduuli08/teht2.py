@@ -43,7 +43,6 @@ try:
   print(return_sum(balloonport_sum), ' ilmapallokenttää')
   print(return_sum(seaplane_sum), ' merilentokenttää')
   
-
   cursor.close()
   connection.close()
   print("Connection closed")

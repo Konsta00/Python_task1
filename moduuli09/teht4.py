@@ -8,7 +8,6 @@ class Auto:
         self.kuljettu_matka = 0
 
     def tulosta_ominaisuudet(self):
-        print("Auton tiedot:")
         print("Rekisteritunnus:", self.rekisteritunnus)
         print("Huippunopeus:", self.huippunopeus, "km/h")
         print("Tämänhetkinen nopeus:", self.nykyinen_nopeus, "km/h")
@@ -22,9 +21,7 @@ class Auto:
 
     def kulje(self, tunnit):
         self.kuljettu_matka = self.kuljettu_matka + (self.nykyinen_nopeus * float(tunnit))
-        # print(f'Uusi nopeus: {self.kuljettu_matka}')
 
-            
 def main():
     
     autolista = list()
@@ -36,13 +33,13 @@ def main():
         i += 1
 
     while True:
-    
         for auto in autolista:
             if auto.kuljettu_matka < 10000:
                 auto.kiihdyta(random.randint(-10, 15))
                 auto.kulje(1)
             else:
-                print(f'Kilpailun voitti auto: {auto.tulosta_ominaisuudet()}')
+                print('Kilpailun voitti auto: ')
+                print(auto.tulosta_ominaisuudet())
                 exit()
 
 if __name__ == "__main__":

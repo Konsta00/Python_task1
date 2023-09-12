@@ -31,8 +31,8 @@ try:
     # print(f'Airport coordinates: {airport2_coords}')
 
     distance = geodesic(airport1_coords, airport2_coords).kilometers
-
-    print(f'Lentokenttien välinen etäisyys {distance} kilometriä')
+    
+    print(f'Lentokenttien välinen etäisyys on {distance:.0f} kilometriä')
   
     cursor.close()
     connection.close()
