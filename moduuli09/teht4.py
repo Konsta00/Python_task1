@@ -1,4 +1,5 @@
 import random
+from tabulate import tabulate
 
 class Auto:
     def __init__(self, rekisteritunnus, huippunopeus):
@@ -39,7 +40,12 @@ def main():
                 auto.kulje(1)
             else:
                 print('Kilpailun voitti auto: ')
-                print(auto.tulosta_ominaisuudet())
+                # print(auto.tulosta_ominaisuudet())
+                
+                for auto in autolista:
+                    print('[REKISTERITUNNUS]---[HUIPPUNOPEUS]---[KULJETTUMATKA]')
+                    print(auto.rekisteritunnus, auto.huippunopeus, auto.kuljettu_matka)
+
                 exit()
 
 if __name__ == "__main__":
